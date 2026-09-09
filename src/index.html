@@ -4,10 +4,432 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+
+        <title>Sabelle's Website</title>
     </head>
+
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <!-- =========================
+             STICKY NAVIGATION
+        ========================== -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a class="nav-brand" href="#about">sabelle</a>
+
+                <div class="nav-links">
+                    <a class="nav-link active" href="#about">about</a>
+                    <a class="nav-link" href="#experience">experience</a>
+                    <a class="nav-link" href="#education">education</a>
+                    <a class="nav-link" href="#involvement">involvement</a>
+                    <a class="nav-link" href="#hobbies">hobbies</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- =========================
+             HEADER / HERO
+        ========================== -->
+        <header class="hero">
+            <div class="hero-content">
+                <p class="hero-intro">hello, i'm</p>
+                <h1>sabelle</h1>
+                <p class="hero-subtitle">
+                    computer science graduate student & software engineer
+                </p>
+
+                <a class="hero-button" href="#about">Learn More</a>
+            </div>
+        </header>
+
+
+        <main>
+            <!-- =========================
+                 ABOUT
+            ========================== -->
+            <section class="section about-section" id="about">
+                <div class="section-content">
+                    <p class="section-label">01</p>
+                    <h2>about</h2>
+
+                    <div class="about-layout">
+                        <div class="about-text">
+                            <p>
+                                I'm a computer science graduate student with an
+                                interest in software engineering, backend systems,
+                                infrastructure, and building thoughtful user
+                                experiences.
+                            </p>
+
+                            <p>
+                                My experience spans software development,
+                                cloud technologies, web development, and
+                                technology-focused community involvement.
+                            </p>
+
+                            <button type="button" class="primary-button" id="open-about-modal">
+                                the tl;dr
+                            </button>
+                        </div>
+
+                        <div class="about-highlight">
+                            <p>Currently</p>
+                            <h3>Master of Computer Science</h3>
+                            <p>University of Illinois Urbana-Champaign</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =========================
+                 EXPERIENCE
+            ========================== -->
+            <section class="section experience-section" id="experience">
+                <div class="section-content">
+                    <p class="section-label">02</p>
+                    <h2>experience</h2>
+
+                    <div class="experience-list">
+                        <article class="experience-card">
+                            <div class="experience-heading">
+                                <div>
+                                    <h3>Software Engineering Intern</h3>
+                                    <p class="organization">Apple</p>
+                                </div>
+
+                                <p class="date">2026</p>
+                            </div>
+
+                            <p>
+                                Modernized a backend service and worked with
+                                technologies including Go, Kubernetes, CI/CD,
+                                containerization, and observability tools.
+                            </p>
+                        </article>
+
+                        <article class="experience-card">
+                            <div class="experience-heading">
+                                <div>
+                                    <h3>Engineering Analyst</h3>
+                                    <p class="organization">Goldman Sachs</p>
+                                </div>
+
+                                <p class="date">2021 - 2023</p>
+                            </div>
+
+                            <p>
+                                Worked on software and infrastructure projects
+                                involving Python, React, TypeScript, Kubernetes,
+                                Linux systems, testing, and observability.
+                            </p>
+                        </article>
+
+                        <article class="experience-card">
+                            <div class="experience-heading">
+                                <div>
+                                    <h3>Software Engineering Intern/Co-op</h3>
+                                    <p class="organization">State Farm</p>
+                                </div>
+
+                                <p class="date">2020 - 2021</p>
+                            </div>
+
+                            <p>
+                                Contributed to web development and testing
+                                projects focused on improving customer-facing
+                                digital experiences.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =========================
+                 EDUCATION
+            ========================== -->
+            <section class="section education-section" id="education">
+                <div class="section-content">
+                    <p class="section-label">03</p>
+                    <h2>education</h2>
+
+                    <div class="education-grid">
+                        <article class="education-card">
+                            <p class="degree-type">Graduate</p>
+
+                            <h3>Master of Computer Science</h3>
+
+                            <p class="school">
+                                University of Illinois Urbana-Champaign
+                            </p>
+
+                            <p class="date">2025 - 2026</p>
+
+                            <p>
+                                Coursework focused on software engineering,
+                                cloud computing, machine learning, and advanced
+                                computer science topics.
+                            </p>
+                        </article>
+
+                        <article class="education-card">
+                            <p class="degree-type">Undergraduate</p>
+
+                            <h3>B.S. Computer Science</h3>
+
+                            <p class="school">
+                                University of Illinois Urbana-Champaign
+                            </p>
+
+                            <p class="date">2018 - 2021</p>
+
+                            <p>
+                                Studied algorithms, operating systems, software
+                                design, databases, user interfaces, and other
+                                foundational computer science topics.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="video-container">
+                        <video
+                            class="featured-video"
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                        >
+                            <source src="assets/uiucdrone.mp4" type="video/mp4">
+                            Your browser does not support the HTML5 video tag.
+                        </video>
+
+                        <div class="video-overlay"></div>
+
+                        <div class="video-heading">
+                            <h3>a glimpse of the uiuc campus</h3>
+
+                            <p class="video-note">
+                                via Chris Biela, PrimoMedia on YouTube
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =========================
+                 INVOLVEMENT
+            ========================== -->
+            <section class="section involvement-section" id="involvement">
+                <div class="section-content">
+                    <p class="section-label">04</p>
+                    <h2>involvement</h2>
+
+                    <div class="involvement-grid">
+                        <article class="involvement-card">
+                            <h3>Technology</h3>
+
+                            <p>
+                                I help support technology initiatives and web
+                                development for organizations and communities
+                                I'm involved with.
+                            </p>
+                        </article>
+
+                        <article class="involvement-card">
+                            <h3>Community</h3>
+
+                            <p>
+                                I enjoy helping create spaces where people can
+                                connect, learn from one another, and develop
+                                professionally.
+                            </p>
+                        </article>
+
+                        <article class="involvement-card">
+                            <h3>Mentorship</h3>
+
+                            <p>
+                                I value mentorship and enjoy helping students
+                                and early-career professionals navigate
+                                technology and career development.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =========================
+                 HOBBIES / CAROUSEL
+            ========================== -->
+            <section class="section hobbies-section" id="hobbies">
+                <div class="section-content">
+                    <p class="section-label">05</p>
+                    <h2>hobbies</h2>
+
+                    <div class="carousel">
+                        <button
+                            type="button"
+                            class="carousel-button carousel-button-left"
+                            id="carousel-previous"
+                            aria-label="Previous hobby"
+                        >
+                            &#10094;
+                        </button>
+
+                        <div class="carousel-window">
+                            <div class="carousel-track" id="carousel-track">
+                                <article class="carousel-slide">
+                                    <div class="slide-content">
+                                        <p class="slide-number">01</p>
+                                        <h3>art</h3>
+
+                                        <p>
+                                            I like to paint and draw to exercise my creative juices.
+                                            My favorite mediums are watercolor and oil painting.
+                                            I also enjoy visiting art museums! 
+                                            I especially love impressionist paintings, including
+                                            pre-, post-, and neo-impressionism.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide">
+                                    <div class="slide-content">
+                                        <p class="slide-number">02</p>
+                                        <h3>matcha</h3>
+
+                                        <p>
+                                            I'm a big fan of matcha. I love to make matcha lattes at home, and have
+                                            spent a lot of time learning how to recreate cafe-quality matcha lattes at home.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide">
+                                    <div class="slide-content">
+                                        <p class="slide-number">03</p>
+                                        <h3>travel</h3>
+
+                                        <p>
+                                            I love to travel and explore new places. It's a great way to learn 
+                                            about different cultures and meet new people!
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="carousel-button carousel-button-right"
+                            id="carousel-next"
+                            aria-label="Next hobby"
+                        >
+                            &#10095;
+                        </button>
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            class="carousel-dot active"
+                            data-slide="0"
+                            aria-label="Go to slide 1"
+                        ></button>
+
+                        <button
+                            type="button"
+                            class="carousel-dot"
+                            data-slide="1"
+                            aria-label="Go to slide 2"
+                        ></button>
+
+                        <button
+                            type="button"
+                            class="carousel-dot"
+                            data-slide="2"
+                            aria-label="Go to slide 3"
+                        ></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h2>connect with me</h2>
+
+                <p>thanks for visiting my website!</p>
+
+                <div class="social-links">
+                    <a
+                        class="social-link"
+                        href="https://www.linkedin.com/in/sabelle/"
+                        aria-label="LinkedIn"
+                    >
+                        <span class="social-icon linkedin-icon"></span>
+                    </a>
+
+                    <a
+                        class="social-link"
+                        href="https://github.com/sabelle/"
+                        aria-label="GitHub"
+                    >
+                        <span class="social-icon github-icon"></span>
+                    </a>
+
+                    <a
+                        class="social-link"
+                        href="mailto:sabelle2@illinois.edu"
+                        aria-label="Email"
+                    >
+                        <span class="social-icon email-icon"></span>
+                    </a>
+                </div>
+
+                <p class="copyright">
+                    &copy; 2026 sabelle
+                </p>
+            </div>
+        </footer>
+
+        <!-- =========================
+             ABOUT MODAL
+        ========================== -->
+        <div
+            class="modal"
+            id="about-modal"
+            aria-hidden="true"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
+        >
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <button
+                    type="button"
+                    class="modal-close"
+                    id="close-about-modal"
+                    aria-label="Close modal"
+                >
+                    &times;
+                </button>
+
+                <p class="section-label">About Me</p>
+
+                <h2 id="modal-title">the tl;dr</h2>
+
+                <p>
+                    Current CS Master's student at UIUC. Previously worked at Apple, Goldman Sachs, and State Farm.
+                </p>
+
+                <p>
+                    I also hold a B.S. in Computer Science from UIUC. 
+                    Outside of work I like traveling and making matcha lattes.
+                </p>
+            </div>
+        </div>
     </body>
 </html>
