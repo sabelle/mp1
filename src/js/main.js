@@ -1,14 +1,3 @@
-/*
- * MP1 - Personal Website
- *
- * This file controls the interactive behavior for:
- * 1. Sticky navbar resizing
- * 2. Current-section navigation indicator
- * 3. Smooth scrolling
- * 4. Hobbies carousel
- * 5. About modal
- */
-
 
 /* =========================================
    NAVBAR
@@ -22,11 +11,6 @@ const sections = document.querySelectorAll("main section");
 /**
  * Changes the navbar between its large and small
  * versions based on the user's scroll position.
- *
- * At the top of the page, the navbar uses its larger
- * default size. After the user starts scrolling,
- * navbar-small is added so both the navbar and its
- * text become smaller.
  */
 function updateNavbarSize() {
     if (window.scrollY > 40) {
@@ -87,7 +71,7 @@ function updatePositionIndicator() {
         return;
     }
 
-    let currentSection = sections[0];
+    let currentSection = null; // start with no selection
 
     sections.forEach((section) => {
         const sectionPosition = section.getBoundingClientRect();
@@ -102,7 +86,11 @@ function updatePositionIndicator() {
         }
     });
 
-    setActiveNavLink(currentSection.id);
+    if (currentSection) {
+        setActiveNavLink(currentSection.id);
+    } else {
+        setActiveNavLink("");
+    }
 }
 
 
