@@ -371,7 +371,25 @@ h3 {
 
 .primary-button {
     margin-top: 10px;
-    border-radius: 6px;
+    padding: 14px 28px;
+
+    border: 2px solid $text-dark;
+    border-radius: 4px;
+
+    color: $text-dark;
+    background-color: transparent;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.primary-button:hover {
+    color: white;
+    background-color: $text-dark;
+
+    transform: translateY(-2px);
 }
 
 .about-highlight {
@@ -778,7 +796,6 @@ h3 {
 /* =========================================
    MODAL
 ========================================= */
-
 .modal {
     position: fixed;
     inset: 0;
@@ -813,13 +830,9 @@ h3 {
     max-height: 80vh;
 
     padding: 50px;
-
     overflow-y: auto;
-
     border-radius: 8px;
-
-    background-color: white;
-
+    background-color: $background-light;
     animation: modal-content-in 0.3s ease;
 }
 
@@ -827,15 +840,12 @@ h3 {
     position: absolute;
     top: 15px;
     right: 20px;
-
     border: none;
 
     color: $text-muted;
     background: transparent;
-
     font-size: 2rem;
     line-height: 1;
-
     transition: color 0.2s ease;
 }
 
@@ -850,9 +860,7 @@ h3 {
 
 .footer {
     padding: 80px 30px;
-
     position: relative;
-
     background:
         linear-gradient(
             rgba(35, 31, 29, 0.87),
