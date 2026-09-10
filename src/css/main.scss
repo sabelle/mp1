@@ -186,6 +186,9 @@ h3 {
     color: white;
     background-color: transparent;
 
+    min-width: 140px;
+    font-size: 1rem;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -364,7 +367,6 @@ h3 {
 }
 
 .primary-button {
-    // margin-top: 10px;
     padding: 14px 28px;
 
     border: 2px solid $accent-dark;
@@ -372,6 +374,10 @@ h3 {
 
     color: $accent-dark;
     background-color: transparent;
+
+    min-width: 140px;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .primary-button:hover {
