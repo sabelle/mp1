@@ -42,6 +42,7 @@ $section-padding: 100px 30px;
 
 html {
     scroll-behavior: auto;
+    scrollbar-gutter: stable;
 }
 
 body {
@@ -186,18 +187,11 @@ h3 {
     background-color: transparent;
 
     text-decoration: none;
-
-    transition:
-        background-color 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease;
 }
 
 .hero-button:hover {
     color: $text-dark;
     background-color: white;
-
-    transform: translateY(-2px);
 }
 
 
@@ -370,26 +364,19 @@ h3 {
 }
 
 .primary-button {
-    margin-top: 10px;
+    // margin-top: 10px;
     padding: 14px 28px;
 
-    border: 2px solid $text-dark;
+    border: 2px solid $accent-dark;
     border-radius: 4px;
 
-    color: $text-dark;
+    color: $accent-dark;
     background-color: transparent;
-
-    transition:
-        background-color 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease;
 }
 
 .primary-button:hover {
     color: white;
-    background-color: $text-dark;
-
-    transform: translateY(-2px);
+    background-color: $accent-dark;
 }
 
 .about-highlight {
@@ -420,7 +407,7 @@ h3 {
 
 
 /* =========================================
-   EXPERIENCE / FIXED BACKGROUND IMAGE
+   EXPERIENCE
 ========================================= */
 
 .experience-section {
